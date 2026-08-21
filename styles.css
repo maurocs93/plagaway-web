@@ -65,13 +65,41 @@ body {
   margin: 0 auto;
   padding: 1rem 1.25rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .topbar__logo {
   height: 40px;
   width: auto;
+  order: 1;
+}
+
+.topbar__inner > .btn {
+  order: 2;
+}
+
+.nav {
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.nav a {
+  color: var(--negro-carbon);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: var(--verde-bosque);
 }
 
 /* Hero */
@@ -110,11 +138,22 @@ body {
 
 @media (min-width: 768px) {
   .topbar__inner {
+    flex-wrap: nowrap;
     padding: 1.25rem 2rem;
   }
 
   .topbar__logo {
     height: 48px;
+  }
+
+  .nav {
+    order: 2;
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .topbar__inner > .btn {
+    order: 3;
   }
 
   .hero {
