@@ -651,3 +651,77 @@ body {
     padding: 5rem 2rem;
   }
 }
+
+/* Seguro para tu familia (residencial.html) */
+.trust {
+  background-color: var(--crema);
+  padding: 3.5rem 1.25rem;
+}
+
+.trust__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trust__heading {
+  color: var(--verde-bosque);
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.trust__intro {
+  color: var(--gris-oscuro);
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.trust__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.trust-card {
+  background-color: var(--blanco);
+  border: 1px solid var(--gris-piedra);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.trust-card__title {
+  color: var(--verde-bosque);
+  font-weight: 700;
+  font-size: 1.15rem;
+  border-left: 4px solid var(--verde-bosque);
+  padding-left: 0.75rem;
+}
+
+.trust-card__text {
+  color: var(--gris-oscuro);
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .trust {
+    padding: 5rem 2rem;
+  }
+
+  .trust__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.testimonial--featured {
+  max-width: 640px;
+  margin: 0 auto;
+}
