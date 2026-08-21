@@ -293,3 +293,73 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Proceso */
+.process {
+  background-color: var(--crema);
+  border-top: 1px solid var(--gris-piedra);
+  padding: 3.5rem 1.25rem;
+}
+
+.process__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process__heading {
+  color: var(--verde-bosque);
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.25;
+  margin-bottom: 2.5rem;
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.process-step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--verde-bosque);
+  color: var(--crema);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-step__title {
+  color: var(--negro-carbon);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.process-step__text {
+  color: var(--gris-oscuro);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .process {
+    padding: 5rem 2rem;
+  }
+
+  .process__steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
