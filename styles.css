@@ -136,6 +136,51 @@ body {
   font-size: 0.85rem;
 }
 
+.hero__kicker {
+  color: var(--gris-oscuro);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.hero__title-accent {
+  display: block;
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-weight: 800;
+}
+
+.hero__trust {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--gris-oscuro);
+}
+
+.hero__trust li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero__trust li::before {
+  content: "✓";
+  color: var(--verde-bosque);
+  font-weight: 700;
+}
+
+.hero__trust li:not(:last-child)::after {
+  content: "·";
+  color: var(--gris-piedra);
+  margin-left: 0.5rem;
+}
+
 @media (min-width: 768px) {
   .topbar__inner {
     flex-wrap: nowrap;
