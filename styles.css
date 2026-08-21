@@ -158,6 +158,16 @@ body {
   gap: 1rem;
 }
 
+.service-card__image {
+  display: block;
+  width: calc(100% + 3.5rem);
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+  margin: -1.75rem -1.75rem 0 -1.75rem;
+  border-radius: 12px 12px 0 0;
+}
+
 .service-card__title {
   color: var(--verde-bosque);
   font-size: 1.5rem;
@@ -218,6 +228,10 @@ body {
   .services__cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+
+  .service-card__image {
+    height: 380px;
   }
 
   .specialties {
