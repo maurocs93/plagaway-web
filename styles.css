@@ -242,6 +242,7 @@ body {
 /* Por qué Plagaway */
 .why {
   background-color: var(--blanco);
+  border-top: 1px solid var(--gris-piedra);
   padding: 3.5rem 1.25rem;
 }
 
