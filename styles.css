@@ -1,14 +1,11 @@
 :root {
-  --verde-bosque: #24503A;
   --ambar: #F5A623;
-  --ambar-oscuro: #DB9012;
-  --amarillo: #FFE600;
+  --ambar-oscuro: #E08E00;
   --negro-carbon: #1A1A1A;
   --crema: #FAF7F2;
   --gris-piedra: #E7E3DB;
   --blanco: #FFFFFF;
   --gris-oscuro: #5F5E5A;
-  --cafe-tierra: #7B4A2D;
 }
 
 * {
@@ -37,16 +34,18 @@ body {
   padding: 0.65rem 1.5rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn--amber {
   background-color: var(--ambar);
   color: var(--negro-carbon);
+  box-shadow: 0 4px 12px rgba(26, 26, 26, 0.18);
 }
 
 .btn--amber:hover {
   background-color: var(--ambar-oscuro);
+  box-shadow: 0 6px 16px rgba(26, 26, 26, 0.22);
 }
 
 .btn--large {
@@ -57,7 +56,7 @@ body {
 /* Barra superior */
 .topbar {
   background-color: var(--blanco);
-  border-bottom: 3px solid var(--verde-bosque);
+  border-bottom: 3px solid var(--negro-carbon);
 }
 
 .topbar__inner {
@@ -99,7 +98,7 @@ body {
 
 .nav a:hover,
 .nav a:focus {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
 }
 
 /* Hero */
@@ -119,7 +118,7 @@ body {
 }
 
 .hero__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.15;
 }
@@ -132,7 +131,7 @@ body {
 }
 
 .hero__cert {
-  color: var(--cafe-tierra);
+  color: var(--gris-oscuro);
   font-size: 0.85rem;
 }
 
@@ -171,7 +170,7 @@ body {
 
 .hero__trust li::before {
   content: "✓";
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 700;
 }
 
@@ -218,7 +217,7 @@ body {
 }
 
 .services__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -254,15 +253,15 @@ body {
 }
 
 .service-card__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-size: 1.5rem;
   font-weight: 700;
-  border-left: 4px solid var(--verde-bosque);
+  border-left: 4px solid var(--negro-carbon);
   padding-left: 0.75rem;
 }
 
 .service-card:nth-child(2) .service-card__title {
-  border-left-color: var(--ambar);
+  border-left-color: var(--negro-carbon);
 }
 
 .service-card__text {
@@ -280,7 +279,7 @@ body {
 }
 
 .specialty {
-  border-top: 3px solid var(--cafe-tierra);
+  border-top: 3px solid var(--negro-carbon);
   padding-top: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -288,7 +287,7 @@ body {
 }
 
 .specialty__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 600;
   font-size: 1rem;
 }
@@ -337,7 +336,7 @@ body {
 }
 
 .why__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -351,7 +350,7 @@ body {
 }
 
 .why-item {
-  border-top: 3px solid var(--verde-bosque);
+  border-top: 3px solid var(--negro-carbon);
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -392,7 +391,7 @@ body {
 }
 
 .process__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -420,7 +419,7 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: var(--verde-bosque);
+  background-color: var(--negro-carbon);
   color: var(--crema);
   font-weight: 700;
   font-size: 1.25rem;
@@ -462,7 +461,7 @@ body {
 }
 
 .testimonials__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -499,7 +498,7 @@ body {
 }
 
 .testimonial__author {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 700;
   font-style: normal;
 }
@@ -517,7 +516,7 @@ body {
 
 /* Contacto */
 .contact {
-  background-color: var(--verde-bosque);
+  background-color: var(--negro-carbon);
   text-align: center;
   padding: 3.5rem 1.25rem;
 }
@@ -532,7 +531,7 @@ body {
 }
 
 .contact__heading {
-  color: var(--amarillo);
+  color: var(--crema);
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   line-height: 1.2;
 }
@@ -559,7 +558,7 @@ body {
 
 .btn--outline:hover {
   background-color: var(--crema);
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
 }
 
 @media (min-width: 600px) {
@@ -590,7 +589,7 @@ body {
 }
 
 .policy__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -624,10 +623,10 @@ body {
 }
 
 .policy-card__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 700;
   font-size: 1.15rem;
-  border-left: 4px solid var(--verde-bosque);
+  border-left: 4px solid var(--negro-carbon);
   padding-left: 0.75rem;
 }
 
@@ -661,7 +660,7 @@ body {
 }
 
 .business-types__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
   margin-bottom: 2rem;
@@ -678,7 +677,7 @@ body {
 .business-type {
   background-color: var(--crema);
   border: 1px solid var(--gris-piedra);
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 600;
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
@@ -709,7 +708,7 @@ body {
 }
 
 .trust__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -743,10 +742,10 @@ body {
 }
 
 .trust-card__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-weight: 700;
   font-size: 1.15rem;
-  border-left: 4px solid var(--verde-bosque);
+  border-left: 4px solid var(--negro-carbon);
   padding-left: 0.75rem;
 }
 
@@ -783,7 +782,7 @@ body {
 }
 
 .paths__heading {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   text-align: center;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   line-height: 1.25;
@@ -832,7 +831,7 @@ body {
 }
 
 .path-card__title {
-  color: var(--verde-bosque);
+  color: var(--negro-carbon);
   font-size: 1.5rem;
   font-weight: 700;
 }
