@@ -180,6 +180,17 @@ body {
   margin-left: 0.5rem;
 }
 
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__title-accent {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+}
+
 @media (min-width: 768px) {
   .topbar__inner {
     flex-wrap: nowrap;
