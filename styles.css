@@ -790,6 +790,71 @@ body {
   }
 }
 
+/* Nuestro equipo (residencial.html) */
+.team {
+  background-color: var(--blanco);
+  border-top: 1px solid var(--gris-piedra);
+  padding: 3.5rem 1.25rem;
+}
+
+.team__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.team__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.team__rule {
+  display: block;
+  width: 48px;
+  height: 4px;
+  background-color: var(--ambar);
+  border-radius: 999px;
+}
+
+.team__heading {
+  color: var(--negro-carbon);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.25;
+}
+
+.team__lead {
+  color: var(--gris-oscuro);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  max-width: 34ch;
+}
+
+.team__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 70%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(26, 26, 26, 0.06);
+}
+
+@media (min-width: 768px) {
+  .team {
+    padding: 5rem 2rem;
+  }
+
+  .team__inner {
+    grid-template-columns: 1fr minmax(0, 480px);
+    gap: 3.5rem;
+    align-items: center;
+  }
+}
+
 /* Seguro para tu familia (residencial.html) */
 .trust {
   background-color: var(--crema);
