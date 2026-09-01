@@ -384,6 +384,34 @@ body {
   font-style: normal;
 }
 
+/* Enlace a reseñas de Google (bajo los testimonios) */
+.testimonials__google {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 2rem auto 0;
+  color: var(--gris-oscuro);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  border-radius: 4px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.testimonials__google:hover {
+  color: var(--negro-carbon);
+  text-decoration-color: var(--ambar);
+}
+
+.testimonials__google:focus-visible {
+  outline: 2px solid var(--ambar);
+  outline-offset: 3px;
+  color: var(--negro-carbon);
+}
+
 @media (min-width: 768px) {
   .testimonials {
     padding: 5rem 2rem;
